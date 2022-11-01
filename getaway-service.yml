@@ -5,5 +5,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: hello
-          uri: http://localhost:8091
+      - id: helloService
+        uri: http://localhost:8091/
+        predicates:
+        - Path=/hello/**
