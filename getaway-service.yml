@@ -5,8 +5,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: header_route
-          uri: http://localhost:8080
+        - id: hello
+          uri: http://localhost:8091
           predicates:
             - Header=X-Tenant, mbodev
           filters:
