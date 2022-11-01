@@ -8,4 +8,4 @@ spring:
       - id: helloService
         uri: http://localhost:8091/
         predicates:
-        - Path=/hello/**
+        - Path=/hello-service/**
